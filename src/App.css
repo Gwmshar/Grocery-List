@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fae5d3;
+}
+.head {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #0dc5f3;
+}
+.input {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.inputAdd {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.inputAdd input {
+  width: 70%;
+  height: 50%;
+  padding: 5px;
+}
+.inputAdd button {
+  width: 15%;
+  height: 50%;
+}
+select {
+  width: 15%;
+  height: 50%;
+  text-align: center;
+}
+.stats {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.stats h3 {
+  width: 80%;
+  text-align: center;
+}
+.list {
+  height: 60%;
+  width: 100%;
+  text-align: center;
+}
+.list ul {
+  margin-top: 2rem;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+li {
+  list-style: none;
+}
+.list button {
+  margin-left: 10px;
+}
+.clear {
+  margin-top: 25px;
+  height: 40px;
+  width: 120px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+@media (max-width: 600px) {
+  .input {
+    justify-content: center;
+  }
+  .inputAdd {
+    width: 45%;
+    height: 80%;
+  }
+  .inputAdd input {
+    font-size: 12px;
+  }
+  .inputAdd button {
+    width: 18%;
+  }
+  .inputAdd select {
+    height: 50%;
+    margin: 0;
+    width: 25%;
+  }
+  select {
+    margin-left: 20px;
+    height: 40%;
+    margin-right: 20px;
+    font-size: 12px;
+    width: 30%;
+  }
+}
